@@ -44,7 +44,6 @@ option(SX126X_ENABLE_LR_FHSS "Enable LR-FHSS in build" OFF)
 set(LR_FHSS_SRC_PATH ${CMAKE_CURRENT_SOURCE_DIR}/src CACHE PATH "Path to folder containing LR-FHSS driver")
 
 add_subdirectory(src)
-add_subdirectory(hal)
 
 install(EXPORT Sx126xDriverTargets
     FILE Sx126xDriverConfig.cmake
