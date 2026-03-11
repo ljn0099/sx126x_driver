@@ -15,7 +15,7 @@ bool sx126x_hal_pico_init(sx126x_hal_pico_context_t *ctx) {
         return false;
 
     uint32_t actualRate = spi_init((spi_inst_t *)ctx->spiInst, ctx->speedKHz * 1000);
-    if (actualRate != ctx->speedKHz)
+    if (actualRate != (ctx->speedKHz * 1000))
         return false;
 
     gpio_set_function(ctx->sckPin, GPIO_FUNC_SPI);
