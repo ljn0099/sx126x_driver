@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-#define SX1276_HAL_BUSY_TIMEOUT_US 20000  // 20ms
+#define SX1276_HAL_BUSY_TIMEOUT_US 1000000  // 1s
 #define SX1276_HAL_RESET_HELD_LOW_US 1000 // 1ms
 #define SX1276_HAL_RESET_SLEEP_MS 100     // 100ms
 
